@@ -18,10 +18,11 @@ import secure from '../assets/Encryption.png'
 import privateData from '../assets/private.png'
 import uptime from '../assets/99.png'
 import support from '../assets/support.png'
+import phone2 from '../assets/phone2.png'
 
 function Home() {
     return(
-        <div className = "flex flex-col gap-20">
+        <div className = "flex flex-col gap-20 px-0">
 
             <div className = "flex items-center justify-between px-26 py-2 ">
                 <div className = "flex flex-col gap-5">
@@ -146,6 +147,19 @@ function Home() {
                 </div>
 
                 <img src={appleLaptop} alt='Laptop' className='h-auto w-auto -mr-8'/>
+            </div>
+
+            <div className='h-90 w-full py-10 px-26 bg-light-blue relative flex align-center gap-10 mt-50'>
+
+                <div className='flex flex-col justify-center align-bottom gap-6 w-[50%]'>
+
+                    <h1 className='font-bold text-4xl text-white'>Explore endless possibilities with FinanceFlow</h1>
+                    <p className = "text-white text-md">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat maxime illum magnam similique ullam dolore dolorem?</p>
+                    <Button className = "text-light-blue bg-white rounded-full py-3 px-6 uppercase font-bold hover:duration-400 hover:text-white hover:bg-neutral-blue cursor-pointer w-45">Download App</Button>
+
+                </div>
+
+                <img src={phone2} alt="phones" className='h-auto w-auto absolute right-6 bottom-0'/>
             </div>
         
 
