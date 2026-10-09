@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clarity+City:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+
+@theme {
+  --font-dm: 'DM Sans';
+  --font-clarity: 'Clarity City';
+  --color-white: #ffffff;
+  --color-neutral-blue: #010d50;
+  --color-light-blue: #0328ee;
+  --color-dark-blue: #010725;
+}
+
+body{
+  font-family: 'Clarity City', sans-serif;
+  font-size: 13px
+}
