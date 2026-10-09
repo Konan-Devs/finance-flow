@@ -19,6 +19,7 @@ import privateData from '../assets/private.png'
 import uptime from '../assets/99.png'
 import support from '../assets/support.png'
 import phone2 from '../assets/phone2.png'
+import Carousel from '../components/Carousel.jsx'
 
 function Home() {
     return(
@@ -34,7 +35,7 @@ function Home() {
                     </div>
                 </div>
 
-                <img src={appleLaptop} alt="Apple Laptop" className="w-auto h-auto mt-8 -mr-34"/>
+                <img src={appleLaptop} alt="Apple Laptop" className="w-auto h-auto mt-8 -mr-26"/>
 
             </div>   
 
@@ -146,7 +147,7 @@ function Home() {
                     </div>
                 </div>
 
-                <img src={appleLaptop} alt='Laptop' className='h-auto w-auto -mr-8'/>
+                <img src={appleLaptop} alt='Laptop' className='h-auto w-auto'/>
             </div>
 
             <div className='h-90 w-full py-10 px-26 bg-light-blue relative flex align-center gap-10 mt-50'>
@@ -160,6 +161,16 @@ function Home() {
                 </div>
 
                 <img src={phone2} alt="phones" className='h-auto w-auto absolute right-6 bottom-0'/>
+            </div>
+
+            <div className='mt-40 px-26 py-10 flex flex-col gap-12 w-full relative'>
+                <div className='flex justify-between align-center'>
+                    <h1 className='text-3xl font-bold text-white'>What our Users Say?</h1>
+                    <Button className= 'py-3 px-6 bg-light-blue text-white font-bold uppercase hover:bg-neutral-blue cursor-pointer duration-300 rounded-full'>download app</Button>
+                </div>
+
+                <Carousel/>
+
             </div>
         
 
