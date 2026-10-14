@@ -20,6 +20,13 @@ import uptime from '../assets/99.png'
 import support from '../assets/support.png'
 import phone2 from '../assets/phone2.png'
 import Carousel from '../components/Carousel.jsx'
+import trading from '../assets/trading.png'
+import account from '../assets/account.png'
+import download from '../assets/download.png'
+import '@videojs/react/video/skin.css';
+import { VideoPlayer, VideoSkin } from '@videojs/react/video';
+import { MuxVideo } from '@videojs/react/media/mux-video';
+import { MuxData } from '@videojs/react/extensions/mux-data';
 
 function Home() {
     return(
@@ -173,7 +180,37 @@ function Home() {
 
             </div>
 
-            <div>
+            <div className='flex mt-40 py-10 px-26 items-center justify-between gap-40'>
+
+                <div className='flex flex-col gap-6 items-start px-6'>
+                    <h1 className='text-white font-bold text-4xl'>Get Started Today</h1>
+                    <p className='text-white text-md'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita nam est voluptatem praesentium dignissimos ab vero officiis consequatur nulla.</p>
+
+                    <div className='flex flex-col gap-4 mt-12'>
+                        <div className='text-white flex items-center gap-4'>
+                            <img src={download} alt='download' className='w-auto h-auto'/>
+                            <p>Download App</p>
+                        </div>
+
+                        <div className='text-white flex items-center gap-4'>
+                            <img src={account} alt='create account' className='w-auto h-auto'/>
+                            <p>Create a Free Account</p>
+                        </div>
+
+                        <div className='text-white flex items-center gap-4'>
+                            <img src={trading} alt='trading' className='w-auto h-auto'/>
+                            <p>Start Tradng</p>
+                        </div>
+                    </div>
+                </div>
+
+                <VideoPlayer>
+                    <VideoSkin style={{ width: '100%', aspectRatio: '16 / 9' }}>
+                        <MuxVideo src={"https://stream.mux.com/oPGOEoeoTgMLGKA3IvsZbmivYncr3pRjyZvTOpUJuZE.m3u8"} playsInline />
+                        <MuxData />
+                    </VideoSkin>
+                </VideoPlayer>
+
 
             </div>
         

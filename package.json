@@ -12,6 +12,9 @@
   "dependencies": {
     "@headlessui/react": "^2.2.10",
     "@tailwindcss/vite": "^4.3.3",
+    "@videojs/mux-data": "^10.1.0",
+    "@videojs/mux-video": "^10.1.0",
+    "@videojs/react": "^10.1.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-router-dom": "^7.18.4",
