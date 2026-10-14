@@ -10,7 +10,7 @@ import Tokens from './pages/Tokens.jsx'
 
 function App() {
     return (
-        <div className="flex align-center w-full h-auto justify-center items-center bg-gray-950">
+        <div className="flex w-full h-auto justify-center items-center bg-gray-950">
 
             <Routes>
                 <Route path="/" element={<Home/>}/>

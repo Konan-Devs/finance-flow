@@ -29,7 +29,7 @@ function Home() {
                 <div className = "flex flex-col gap-5">
                     <h1 className="text-white text-6xl font-bold">Buy, Hold and Trade 350+ Cryptocurrencies</h1>
                     <p className="text-white text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sunt soluta laborum quas est. Numquam, architecto.</p>
-                    <div className = 'flex gap-6 align-center justify-start'>
+                    <div className = 'flex gap-6 items-center justify-start'>
                         <Button className="bg-light-blue text-white px-6 py-3 rounded-full font-bold hover:bg-neutral-blue duration-300 ease-in-out cursor-pointer">Download App</Button>
                         <Button className="bg-gray-600 text-white px-6 py-3 rounded-full font-bold hover:bg-light-blue duration-300 ease-in-out cursor-pointer">View Pricing</Button>
                     </div>
@@ -99,50 +99,50 @@ function Home() {
                     <img src ={phones} alt ="Phones" className = "h-auto w-auto"/>
                 </div>
 
-                <div className = "flex flex-col gap-6 align-start">
+                <div className = "flex flex-col gap-6 items-start">
                     <h1 className="text-white text-5xl font-bold ">Earn daily task rewards on your idle tokens</h1>
                     <p className="text-white text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquid?</p>
 
-                    <div className = "flex flex-col align-center justify-center gap-8">
-                        <div className ="flex align-center gap-3">
+                    <div className = "flex flex-col items-center justify-center gap-8">
+                        <div className ="flex items-center gap-3">
                             <img src={fees} alt="Fees" className="w-auto h-auto"/>
-                            <p className="text-white text-md font-bold mt-3">Lowest fees in market</p>
+                            <p className="text-white text-md font-bold">Lowest fees in market</p>
                         </div>
 
-                        <div className ="flex align-center gap-3">
+                        <div className ="flex items-center gap-3">
                             <img src={fast} alt="Fast and Secure" className="w-auto h-auto"/>
-                            <p className="text-white text-md font-bold mt-3">Fast and secure transactions</p>
+                            <p className="text-white text-md font-bold">Fast and secure transactions</p>
                         </div>
 
-                        <div className ="flex align-text-bottom gap-3">
+                        <div className ="flex items-center gap-3">
                             <img src={secure} alt="Encryption" className="w-auto h-auto"/>
-                            <p className="text-white text-md font-bold mt-3">256-bit secure encryption</p>
+                            <p className="text-white text-md font-bold">256-bit secure encryption</p>
                         </div>
                     </div>
 
                 </div>
             </div>
 
-            <div className='flex gap-10 align-center mt-40'>
+            <div className='flex gap-10 items-center mt-40'>
 
-                <div className='flex flex-col align-start py-4 px-26 gap-6'>
+                <div className='flex flex-col items-start py-4 px-26 gap-6'>
                     <h1 className='text-5xl font-bold text-white'>Earn daily task rewards on your idle tokens</h1>
                     <p className='text-md text-white'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, sit!</p>
 
                     <div className='flex flex-col gap-5'>
-                        <div className='flex gap-3 align-center'>
+                        <div className='flex gap-3 items-center'>
                             <img src={privateData} alt="Secure Data" className='h-auto w-auto'/>
-                            <p className='text-md text-white font-bold mt-3'>100% Private Data</p>
+                            <p className='text-md text-white font-bold'>100% Private Data</p>
                         </div>
 
-                        <div className='flex gap-3 align-center'>
+                        <div className='flex gap-3 items-center'>
                             <img src={uptime} alt='99% Uptime' className='h-auto w-auto'/>
-                            <p className='text-md text-white font-bold mt-3'>99% Uptime guaranteed</p>
+                            <p className='text-md text-white font-bold'>99% Uptime guaranteed</p>
                         </div>
 
-                        <div className='flex gap-3 align-center'>
+                        <div className='flex gap-3 items-center'>
                             <img src={support} alt='Support' className='h-auto w-auto'/>
-                            <p className='text-md text-white font-bold mt-3'>24/7 Dedicated Support</p>
+                            <p className='text-md text-white font-bold '>24/7 Dedicated Support</p>
                         </div>
                     </div>
                 </div>
@@ -150,7 +150,7 @@ function Home() {
                 <img src={appleLaptop} alt='Laptop' className='h-auto w-auto'/>
             </div>
 
-            <div className='h-90 w-full py-10 px-26 bg-light-blue relative flex align-center gap-10 mt-50'>
+            <div className='h-90 w-full py-10 px-26 bg-light-blue relative flex items-center gap-10 mt-50'>
 
                 <div className='flex flex-col justify-center align-bottom gap-6 w-[50%]'>
 
@@ -164,12 +164,16 @@ function Home() {
             </div>
 
             <div className='mt-40 px-26 py-10 flex flex-col gap-12 w-full relative'>
-                <div className='flex justify-between align-center'>
+                <div className='flex justify-between items-center'>
                     <h1 className='text-3xl font-bold text-white'>What our Users Say?</h1>
                     <Button className= 'py-3 px-6 bg-light-blue text-white font-bold uppercase hover:bg-neutral-blue cursor-pointer duration-300 rounded-full'>download app</Button>
                 </div>
 
                 <Carousel/>
+
+            </div>
+
+            <div>
 
             </div>
         
